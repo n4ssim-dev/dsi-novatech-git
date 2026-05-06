@@ -62,7 +62,7 @@ td, th {
 /* Responsive cassé volontairement */
 @media (max-width: 600px) {
   table {
-    width: 800px; /* volontairement incorrect pour provoquer un débordement */
+    width: 600px; /* volontairement incorrect pour provoquer un débordement */
   }
 }
 
