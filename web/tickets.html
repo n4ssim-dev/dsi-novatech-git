@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tickets - Novatech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tableau des tickets</h1>
+    <p>Suivi des incidents et demandes internes</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="methodologie.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Liste des tickets</h2>
+
+      <!-- TODO : connecter ce tableau à la base SQLite via Python -->
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Priorité</th>
+            <th>Statut</th>
+            <th>Assigné à</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>WEB-002</td>
+            <td>Lien analyse drones cassé</td>
+            <td>Haute</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>WEB-003</td>
+            <td>Badge "Nouvelle version"</td>
+            <td>Moyenne</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>WEB-004</td>
+            <td>Commentaires sensibles HTML</td>
+            <td>Haute</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>WEB-005</td>
+            <td>Problème responsive tableau</td>
+            <td>Moyenne</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section>
+      <h2>Filtrer les tickets</h2>
+
+      <!-- volontairement non fonctionnel -->
+      <form>
+        <label for="status">Statut :</label>
+        <select id="status">
+          <option>Ouvert</option>
+          <option>En cours</option>
+          <option>Fermé</option>
+        </select>
+
+        <button type="button">Filtrer</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Novatech - DSI Développement</p>
+  </footer>
+
+</body>
+</html>

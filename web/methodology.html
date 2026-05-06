@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Méthodologie - Novatech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Méthodologie projet</h1>
+    <p>Standards de développement et organisation DSI</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="methodologie.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Organisation du développement</h2>
+      <p>
+        La DSI adopte une méthodologie basée sur Git afin d'assurer la qualité et la traçabilité du code.
+      </p>
+    </section>
+
+    <section>
+      <h2>Stratégie de branches</h2>
+      <ul>
+        <li><strong>main</strong> : version stable en production</li>
+        <li><strong>develop</strong> : intégration des fonctionnalités</li>
+        <li><strong>feature/*</strong> : développement des nouvelles fonctionnalités</li>
+        <li><strong>fix/*</strong> : corrections de bugs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Processus de contribution</h2>
+      <ol>
+        <li>Créer une branche à partir de <code>develop</code></li>
+        <li>Développer la fonctionnalité ou corriger le bug</li>
+        <li>Committer les modifications</li>
+        <li>Ouvrir une Pull Request</li>
+        <li>Attendre validation avant fusion</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Bonnes pratiques</h2>
+      <ul>
+        <li>Ne jamais pousser directement sur <code>main</code></li>
+        <li>Rédiger des messages de commit explicites</li>
+        <li>Tester les modifications avant soumission</li>
+        <li>Documenter les changements importants</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Versions</h2>
+
+      <!-- TODO : ajouter un badge "Nouvelle version" visible -->
+
+      <p>
+        Version actuelle : 1.2
+      </p>
+
+      <p>
+        Dernières évolutions :
+      </p>
+
+      <ul>
+        <li>Mise en place du portail interne</li>
+        <li>Ajout du suivi des tickets</li>
+        <li>Amélioration de la navigation</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Novatech - DSI Développement</p>
+  </footer>
+
+</body>
+</html>
